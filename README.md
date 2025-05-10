@@ -1,45 +1,100 @@
-
 # COVID-19 Global Data Tracker
 
-This Jupyter Notebook analyzes global COVID-19 trends using data from Johns Hopkins University (JHU) CSSE for cases, deaths, and recoveries, and Our World in Data (OWID) for vaccinations. It includes data cleaning, exploratory data analysis, visualizations, and narrative insights.
+This repository contains a Jupyter Notebook project that analyzes global COVID-19 trends, using data from reliable sources like Johns Hopkins University (JHU) and Our World in Data (OWID). The project covers various aspects such as case numbers, deaths, recoveries, and vaccination data. This tracker includes exploratory data analysis, visualizations, and key insights, focusing on countries and their pandemic responses.
 
-## Objectives
-- Import and clean COVID-19 global data.
-- Analyze time trends (cases, deaths, vaccinations).
-- Compare metrics across countries.
-- Visualize trends with charts and maps.
-- Communicate findings in a report.
+## Key Features
+- **Data Collection**: The dataset includes global COVID-19 case statistics (confirmed, deaths, and recoveries) from JHU, and vaccination data from OWID.
+- **Data Cleaning and Preprocessing**: Reshaping the data for better analysis and handling missing values to ensure accuracy.
+- **Visualizations**: Various plots, including time series for total cases, deaths, daily new cases, and vaccination trends. All visualizations are saved as PNG files and interactive choropleth maps.
+- **Insights Report**: A markdown file that summarizes key findings from the data analysis.
+- **Downloadable Data**: A merged CSV file containing processed global COVID-19 data.
 
-## Outputs
-- Visualizations: PNG charts and HTML choropleth map in `visualizations/`.
-- Insights: `docs/covid_insights.md`.
-- Dataset: `data/covid_combined_data.csv`.
+## Technologies Used
+- Python (Pandas, Matplotlib, Seaborn, Plotly)
+- Jupyter Notebook
 
-## 1. Data Collection
-Load datasets from JHU CSSE (cases, deaths, recoveries) and OWID (vaccinations).
+## Project Structure
+- `data/`: Processed data files, including `covid_combined_data.csv`.
+- `visualizations/`: Contains saved images of charts and maps (`.png`, `.html`).
+- `docs/`: A markdown report (`covid_insights.md`) summarizing key insights.
 
-## 2. Data Exploration
-Inspect dataset structure and missing values.
+## Installation
 
-## 3. Data Cleaning
-- Reshape JHU datasets to long format.
-- Merge datasets.
-- Handle missing values.
-- Allow user input for country selection (stretch goal).
+To run the notebook locally, follow these steps:
 
-## 4. Exploratory Data Analysis
-Analyze trends with visualizations and statistics.
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/covid-19-tracker.git
 
-## 5. Vaccination Progress
-Visualize vaccination trends.
+  
+  
+    
 
-## 6. Choropleth Map
-Visualize global case distribution.
+    
 
-## 7. Insights & Reporting
-Summarize findings in a markdown file.
+Navigate into the project directory:
 
----
+bash
+Copy
+Edit
+cd covid-19-tracker
 
-**Created by Daltone Tonny**  
-Feel free to reach out for questions or contributions!
+  
+  
+    
+
+    
+
+Install the required dependencies:
+
+bash
+Copy
+Edit
+pip install -r requirements.txt
+
+  
+  
+    
+
+    
+
+Run the notebook:
+
+bash
+Copy
+Edit
+jupyter notebook COVID-19_Global_Data_Tracker.ipynb
+
+  
+  
+    
+
+    
+
+How to Use
+Data Input: The data is loaded directly from publicly available CSV files hosted on GitHub.
+
+Country Selection: By default, the project analyzes data for countries like Kenya, the United States, and India. You can change this list by entering country names when prompted.
+
+Visualizations: The notebook generates line charts, bar charts, and a choropleth map. These visualizations are saved in the visualizations/ folder.
+
+Insights & Results
+This notebook offers in-depth insights on:
+
+Global Case Trends: Visualizing the rise and fall of COVID-19 cases across various countries.
+
+Vaccination Rates: Comparing vaccination progress over time.
+
+Death Rates and Case Fatality: Analyzing the impact of the virus and how different countries are affected.
+
+Example Analysis:
+Kenya shows a slower rate of infection and a relatively lower death rate compared to the United States.
+
+India has a higher number of cases, but vaccination efforts have significantly mitigated the spread in 2022.
+
+The choropleth map provides a global overview of the most affected areas, with notable hotspots in North America and Europe.
+
+Contributions
+Feel free to fork and contribute to this repository by submitting issues or pull requests. Contributions are welcome to further improve the analysis or add additional features!
+
+Created by Daltone Tonny
