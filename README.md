@@ -24,7 +24,7 @@ To run the notebook locally, follow these steps:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/covid-19-tracker.git
+  (https://github.com/daltonetonny/COVID19 TRACKR/)
 
   
   
